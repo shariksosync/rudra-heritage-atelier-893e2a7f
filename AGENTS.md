@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+- Use TanStack file routes with route-specific metadata and keep shared storefront state in a root-level provider; the target framework is fixed and the requested shop remains backend-free.

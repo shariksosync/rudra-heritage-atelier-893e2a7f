@@ -1,0 +1,104 @@
+{
+  "source": "https://github.com/shariksosync/rudra-heritage-atelier",
+  "inspected": true,
+  "capabilities": [
+    {
+      "capability": "code",
+      "source": "Public GitHub repository; React/TanStack app with unresolved RudraApp.jsx and StoreUI.jsx imports",
+      "outcome": "migrate",
+      "status": "in_progress",
+      "next_action": "Port the complete storefront and finish the existing admin features."
+    },
+    {
+      "capability": "schema",
+      "source": "No database schema or server data store detected",
+      "outcome": "not_applicable",
+      "status": "not_applicable",
+      "next_action": "Keep the requested frontend-only mock-data model."
+    },
+    {
+      "capability": "records",
+      "source": "Bundled demo catalog, orders, customers, inquiries, testimonials, gallery, banner, and settings in src/data/mock-data.js; no external record export found",
+      "outcome": "migrate",
+      "status": "in_progress",
+      "next_action": "Carry over bundled sample records and verify browser-persisted updates."
+    },
+    {
+      "capability": "auth_identities",
+      "source": "Frontend-only demo customer and administrator flows; no real identity provider or user export found",
+      "outcome": "recreate_mock_flows",
+      "status": "in_progress",
+      "next_action": "Preserve the mock sign-in and account experience without claiming real authentication."
+    },
+    {
+      "capability": "authorization",
+      "source": "Client-side demo administrator route gate in src/components/AdminArea.jsx",
+      "outcome": "preserve_demo_gate",
+      "status": "in_progress",
+      "next_action": "Verify unauthenticated admin visits go to demo sign-in."
+    },
+    {
+      "capability": "uploaded_file_bytes",
+      "source": "Six bundled public PNG artwork assets",
+      "outcome": "migrate",
+      "status": "in_progress",
+      "next_action": "Copy all original images into the Lovable project and verify they render."
+    },
+    {
+      "capability": "external_providers",
+      "source": "No external provider integrations detected",
+      "outcome": "not_applicable",
+      "status": "not_applicable",
+      "next_action": "None."
+    },
+    {
+      "capability": "public_endpoints",
+      "source": "No custom public endpoints detected",
+      "outcome": "not_applicable",
+      "status": "not_applicable",
+      "next_action": "None."
+    },
+    {
+      "capability": "callbacks",
+      "source": "No external callbacks detected",
+      "outcome": "not_applicable",
+      "status": "not_applicable",
+      "next_action": "None."
+    },
+    {
+      "capability": "webhooks",
+      "source": "No webhook handlers detected",
+      "outcome": "not_applicable",
+      "status": "not_applicable",
+      "next_action": "None."
+    },
+    {
+      "capability": "schedules",
+      "source": "No scheduled jobs detected",
+      "outcome": "not_applicable",
+      "status": "not_applicable",
+      "next_action": "None."
+    },
+    {
+      "capability": "secrets",
+      "source": "No required environment variables or provider credentials detected",
+      "outcome": "not_applicable",
+      "status": "not_applicable",
+      "next_action": "None."
+    },
+    {
+      "capability": "cutover",
+      "source": "New Lovable preview; source deployment URL was not provided",
+      "outcome": "new_preview",
+      "status": "pending",
+      "next_action": "Verify the preview; publication and domain cutover were not requested."
+    },
+    {
+      "capability": "verification",
+      "source": "Incomplete source repository; no functional storefront test evidence",
+      "outcome": "verify_rebuilt_preview",
+      "status": "pending",
+      "next_action": "Check build logs, test routes, checkout, persistence, and administrator gating."
+    }
+  ]
+}
